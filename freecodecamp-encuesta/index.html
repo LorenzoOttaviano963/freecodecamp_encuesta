@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Formulario de Encuesta</h1>
+    <p id="description">Rellene el formulario con la información correspondiente</p>
+  </body>
+  <form id="survey-form">
+  <fieldset>
+    <label id="name-label" for="name">Ingresá tu nombre: <input id="name" name="name" type="text" required placeholder="Julian" value/></label>
+    <label id="email-label" for="email">Ingresá tu email: <input id="email" name="email" type="email" required placeholder="Julian@gmail.com"/><label>
+    <label id="number-label" for="number">Ingrese un número (del 1 al 10): <input id="number" name="number" type="number" min="1" max="10" required placeholder="1"/><label>
+       <hr>
+  <select id="dropdown" name="dropdown">
+    <option value="">Seleccione una opción</option>
+    <option value="1">a</option>
+    <option value="2">b</option>
+  </select>
+  <legend>Tipo de cuenta</legend>
+    <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked value="1"/> Personal</label>
+    <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="2"/> Business</label>
+    <legend>Que animal le gusta</legend>
+    <label><input class="inline" value="1" id="checkbox" type="checkbox" checked/> Perros</label>
+    <label><input class="inline" value="2" id="checkbox" type="checkbox"/> Gatos</label>
+    <hr>
+    <label for="mensaje">Deje un mensaje
+      <textarea id="mensaje" name="mensaje" rows="3" cols="30" placeholder="Me gustan los gatos"></textarea>
+    </label>
+    <input id="submit" value="Submit" type="submit"/>
+  </fieldset>
+  </form>
+</html>
